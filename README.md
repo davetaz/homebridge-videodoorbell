@@ -127,3 +127,10 @@ You can also show a trigger button in HomeKit that activates the doorbell notifi
   ]
 }
 ```
+#### Capturing a reliable still image from an rtsp source
+
+Try using the tcp transport mechanism.
+
+``` 
+   "stillImageSource": "-rtsp_transport tcp -i rtsp://myfancy_rtsp_stream -vframes 1 -r 1",
+```
